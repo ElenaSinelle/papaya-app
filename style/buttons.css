@@ -1,0 +1,37 @@
+.sidebar__button_small {
+  height: 54px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.sidebar__button_medium {
+  height: 54px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.sidebar__title {
+  height: 54px;
+  padding-left: 16px;
+  padding-top: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+
+.sidebar__line{
+  width: 248px;
+  height: 1px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.30) 50.4%, rgba(255, 255, 255, 0.00) 96.77%);
+  background-blend-mode: overlay;
+}
+
+
+
+/* background: radial-gradient(50% 128.57% at 50% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0.00) 100%); */
