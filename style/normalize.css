@@ -9,7 +9,9 @@ html {
 
 /* Set box-sizing*/
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove the margin in all browsers. */
