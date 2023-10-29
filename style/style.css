@@ -8,7 +8,7 @@ body {
 
 .grid-container {
   display: grid;
-  width: 1512px;
+  max-width: 1512px;
   height: 982px;
   margin: 0 auto;
   grid-template-columns: 16% 1fr 16%;
@@ -73,8 +73,9 @@ a {
 /*search field styles*/
 .header__search-field {
   grid-area: search-field;
+  max-width: 442px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -98,7 +99,7 @@ a {
   height: 24px;
   background-image: url(../assets/images/svg/search-icon.svg);
   position: absolute;
-  left: 300px;
+  left: 10px;
   top: 17px;
 }
 
@@ -118,7 +119,7 @@ input:focus + .search-icon {
   width: 32px;
   height: 32px;
   position: absolute;
-  left: 700px;
+  left: 404px;
   top: 12px;
 }
 
@@ -133,7 +134,7 @@ input:focus {
 .header__actionbar {
   grid-area: actionbar;
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   align-items: center;
@@ -247,6 +248,8 @@ input:focus {
   background-image: url(../assets/images/svg/sprite-circle-icons.svg);
   background-position: -8px -139px;
 }
+
+
 
 
 .main {
