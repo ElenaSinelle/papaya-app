@@ -20,9 +20,15 @@ body {
 }
 
 a {
-  color: #9697ac;
+  color: rgba(255, 255, 255, 0.60);
+  transition: all ease 0.3s;
 }
 
+a:hover,
+a:focus,
+a:active {
+  color: #ffffff;
+}
 /*sprite boxes styles*/
 .sprite-box_small {
   width: 24px;
@@ -121,6 +127,7 @@ input:focus + .search-icon {
   position: absolute;
   left: 404px;
   top: 12px;
+  cursor: pointer;
 }
 
 input:active,
@@ -143,16 +150,19 @@ input:focus {
 .header__actionbar-video {
   background-image: url(../assets/images/svg/sprite-icons.svg);
   background-position: -490px -24px;
+  cursor: pointer;
 }
 
 .header__actionbar-notify {
   background-image: url(../assets/images/svg/sprite-icons.svg);
   background-position: -367px -112px;
+  cursor: pointer;
 }
 
 .header__actionbar-user {
   background-image: url(../assets/images/svg/sprite-avatar.svg);
   background-position: -20px -20px;
+  cursor: pointer;
 }
 
 /*nav (controls) styles*/
