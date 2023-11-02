@@ -129,26 +129,25 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
   gap: 30px;
-  align-items: center;
+  position: relative;
 }
 
 .header__actionbar-video {
   background-image: url(../assets/images/svg/sprite-icons.svg);
-  background-position: -490px -24px;
-  cursor: pointer;
+  background-position: -485px -18px;
 }
 
 .header__actionbar-notify {
   background-image: url(../assets/images/svg/sprite-icons.svg);
-  background-position: -367px -112px;
-  cursor: pointer;
+  background-position: -362px -107px;
 }
 
 .header__actionbar-user {
   background-image: url(../assets/images/svg/sprite-avatar.svg);
-  background-position: -20px -20px;
-  cursor: pointer;
+  background-position: -19px -19px;
 }
 
 /*nav (controls) styles*/

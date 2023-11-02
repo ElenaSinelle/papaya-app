@@ -51,7 +51,6 @@ a:hover.sidebar__button {
   background: radial-gradient(50% 128.57% at 50% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0.00) 100%);
 }
 
-
 /*sprite boxes styles*/
 .sprite-border {
   position: absolute;
@@ -70,7 +69,7 @@ a:hover.sidebar__button {
 
 .sprite-box_medium {
   width: 34px;
-  height: 32px;
+  height: 34px;
   background-repeat: no-repeat;
 }
 
