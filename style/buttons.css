@@ -1,0 +1,84 @@
+.sidebar__button {
+  height: 54px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  transition: all ease 0.5s;
+}
+
+.sidebar__button_small {
+  gap: 28px;
+}
+
+.sidebar__button_medium {
+  gap: 22px;
+}
+
+.sidebar__title {
+  height: 54px;
+  padding-left: 16px;
+  padding-top: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.sidebar__button::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  content: "";
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.30) 50.4%, rgba(255, 255, 255, 0.00) 96.77%);
+}
+
+.sidebar__button::after {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.30) 50.4%, rgba(255, 255, 255, 0.00) 96.77%);
+}
+
+a:hover.sidebar__button::before,
+a:hover.sidebar__button::after {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 50.4%, rgba(255, 255, 255, 0.00) 96.77%);
+}
+
+a:hover.sidebar__button {
+  background: radial-gradient(50% 128.57% at 50% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0.00) 100%);
+}
+
+/*sprite boxes styles*/
+.sprite-border {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  transition: all ease 0.5s;
+  background-image: url('../assets/images/svg/sprite-circle.svg');
+  opacity: 0;
+}
+
+.sprite-box_small {
+  width: 26px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.sprite-box_medium {
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+
+.sprite-box_large {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+a:hover .sprite-border {
+  opacity: 1;
+}
