@@ -12,12 +12,28 @@
   <div class="grid-container">
     <header class="header">
       <div class="header__logo-container">
-        <div class="header__browser-icons"><a href="./."><img src="assets/images/png/browser-btn.png" alt="browser button"></a></div>
+        <div class="header__browser-icons"><a href="#sidebar"><img src="assets/images/png/browser-btn.png" alt="browser button"></a></div>
         <div class="header__logo">
-          <div class="header__logo-burger"><img src="assets/images/svg/burger-icon.svg" alt="burger icon"></div>
+          <input type="checkbox" class="header__logo-burger-checkbox">
+          <div class="header__logo-burger"></div>
+          <ul class="sidebar-toggled-menu">
+            <li><a href="./.">Home</a></li>
+            <li><a href="./.">Shorts</a></li>
+            <li><a href="./.">Subscriptions</a></li>
+            <li><a href="./.">Papaya Music</a></li>
+            <li><a href="./.">Library</a></li>
+            <li><a href="./.">History</a></li>
+            <li><a href="./.">Your Videos</a></li>
+            <li><a href="./.">Watch Later</a></li>
+            <li><a href="./.">Downloads</a></li>
+            <li><a href="./.">Show More</a></li>
+            <li><a href="./.">Design Code</a></li>
+            <li><a href="./.">Figma</a></li>
+            <li><a href="./.">Sketch</a></li>
+            <li><a href="./.">Spline</a></li>
+          </ul>
           <div class="header__logo-caption"><img src="assets/images/svg/papaya.svg" alt="Papaya"></div>
         </div>
-        <!-- <div class="sidebar__line"></div> -->
       </div>
 
       <div class="header__search-field">
@@ -26,193 +42,213 @@
         <div><img class="mic-icon" src="assets/images/svg/mic-icon.svg" alt="microphone"></div>
       </div>
 
-      <div class="header__actionbar">
-        <a href="./."><div class="sprite-border"></div><div class="sprite-box_medium header__actionbar-video"></div></a>
-        <a href="./."><div class="sprite-border"></div><div class="sprite-box_small header__actionbar-notify"></div></a>
-        <a href="./."><div class="sprite-border"></div><div class="sprite-box_medium header__actionbar-user"></div></a>
+      <div class="header__actionbar" id="actionbar">
+        <a href="#actionbar"><div class="sprite-border"></div><div class="sprite-box_medium header__actionbar-video"></div></a>
+        <a href="#actionbar"><div class="sprite-border"></div><div class="sprite-box_small header__actionbar-notify"></div></a>
+        <a href="#actionbar"><div class="sprite-border"></div><div class="sprite-box_medium header__actionbar-user"></div></a>
       </div>
 
-      <div class="header__controls">
+      <div class="header__controls" id="header-controls">
         <nav class="header__nav-container">
           <ul class="nav__items">
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">All</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Gaming</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Thoughts</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Music</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Thrillers</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Mixes</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Avatar</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Criticisma</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Korean Dramas</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Characters</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Eating</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
 
             <li>
-              <a href="./." class="nav__item">
+              <a href="#header-controls" class="nav__item">
                 <span class="nav__text">Games</span>
                 <span class="nav__oval"></span>
               </a>
             </li>
-
           </ul>
+
+          <div class="nav__errow"></div>
         </nav>
+
+        <input type="checkbox" class="header__controls-burger-checkbox">
+        <div class="nav__burger"></div>
+        <ul class="controls-toggled-menu">
+          <li><a href="./.">All</a></li>
+          <li><a href="./.">Gaming</a></li>
+          <li><a href="./.">Thoughts</a></li>
+          <li><a href="./.">Music</a></li>
+          <li><a href="./.">Thrillers</a></li>
+          <li><a href="./.">Mixes</a></li>
+          <li><a href="./.">Avatar</a></li>
+          <li><a href="./.">Criticisma</a></li>
+          <li><a href="./.">Korean Dramas</a></li>
+          <li><a href="./.">Characters</a></li>
+          <li><a href="./.">Eating</a></li>
+          <li><a href="./.">Games</a></li>
+        </ul>
       </div>
     </header>
 
-    <section class="sidebar">
+    <section class="sidebar" id="sidebar">
       <h2>Sidebar</h2>
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__home"></span>
-        <span>Home</span>
-      </a>
+      <div class="sidebar__container">
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__home"></span>
+          <span>Home</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__shorts"></span>
-        <span>Shorts</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__shorts"></span>
+          <span>Shorts</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__subscriptions"></span>
-        <span>Subscriptions</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__subscriptions"></span>
+          <span>Subscriptions</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__music"></span>
-        <span>Papaya Music</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__music"></span>
+          <span>Papaya Music</span>
+        </a>
 
-      <div class="sidebar__title">My channel</div>
+        <div class="sidebar__title">My channel</div>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__library"></span>
-        <span>Library</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__library"></span>
+          <span>Library</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__history"></span>
-        <span>History</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__history"></span>
+          <span>History</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__videos"></span>
-        <span>Your Videos</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__videos"></span>
+          <span>Your Videos</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__watch-later"></span>
-        <span>Watch Later</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__watch-later"></span>
+          <span>Watch Later</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__downloads"></span>
-        <span>Downloads</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__downloads"></span>
+          <span>Downloads</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_small">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_small sidebar__show-more"></span>
-        <span>Show More</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_small">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_small sidebar__show-more"></span>
+          <span>Show More</span>
+        </a>
 
-      <div class="sidebar__title">Subscriptions</div>
+        <div class="sidebar__title">Subscriptions</div>
 
-      <a href="./." class="sidebar__button sidebar__button_medium">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_medium sidebar__code"></span>
-        <span>Design Code</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_medium">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_medium sidebar__code"></span>
+          <span>Design Code</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_medium">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_medium sidebar__figma"></span>
-        <span>Figma</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_medium">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_medium sidebar__figma"></span>
+          <span>Figma</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_medium">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_medium sidebar__sketch"></span>
-        <span>Sketch</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_medium">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_medium sidebar__sketch"></span>
+          <span>Sketch</span>
+        </a>
 
-      <a href="./." class="sidebar__button sidebar__button_medium">
-        <span class="sprite-border"></span>
-        <span class="sprite-box_medium sidebar__spline"></span>
-        <span>Spline</span>
-      </a>
+        <a href="#sidebar" class="sidebar__button sidebar__button_medium">
+          <span class="sprite-border"></span>
+          <span class="sprite-box_medium sidebar__spline"></span>
+          <span>Spline</span>
+        </a>
+      </div>
     </section>
 
     <section class="main">
