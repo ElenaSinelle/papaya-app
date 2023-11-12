@@ -1,0 +1,10 @@
+@media (hover: hover) {
+  a:hover {
+    color: #ffffff;
+  }
+
+  input:hover {
+    outline: 3px solid #38447b;
+    outline-offset: 3px solid #38447b;
+  }
+}
